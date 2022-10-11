@@ -1,9 +1,9 @@
 S#,Country,Daily Oil Consumption (Barrels),World Share,Yearly Gallons Per Capita,Price Per Gallon (USD),GDP Per Capita ( USD ),Gallons GDP Per Capita Can Buy,xTimes Yearly Gallons Per Capita Buy
-1,United States of America,19687287,20%,934.3,5.19,63414,12218,13
-2,China,12791553,13%,138.7,5.42,10435,1925,14
-3,India,4443000,5%,51.4,5.05,1901,376,7
-4,Japan,4012877,4%,481.5,4.69,40193,8570,18
-5,Russia,3631287,4%,383.2,3.41,10127,2970,8
+1,United States of America,19687287,20,934.3,5.19,63414,12218,13
+2,China,12791553,13,138.7,5.42,10435,1925,14
+3,India,4443000,5,51.4,5.05,1901,376,7
+4,Japan,4012877,4,481.5,4.69,40193,8570,18
+5,Russia,3631287,4,383.2,3.41,10127,2970,8
 6,Saudi Arabia,3302000,3%,1560.2,2.35,20110,8557,5
 7,Brazil,2984000,3%,221.9,5.36,6797,1268,6
 8,South Korea,2605440,3%,783.4,6.09,31632,5194,7
