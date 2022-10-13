@@ -62,5 +62,25 @@
   
   </div>
   </div>
-</body>
+
+
+<script type="text/javascript">
+
+  var spec1 = "js/map.vg.json";
+  vegaEmbed('#chloropleth_map', spec1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec2 = "js/bubble_chart.vg.json";
+  vegaEmbed('#bubble_chart', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec3 = "js/stacked_barchart.vg.json";
+  vegaEmbed('#stacked_barchart', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+    </script>
+  </body>
 </html>
