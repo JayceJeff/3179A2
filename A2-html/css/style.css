@@ -2,8 +2,11 @@
     font-family: 'Open Sans';
 }
 
-h1, h2 {
-    font-family: 'Roboto';
+h1{
+    text-align: center;
+}
+
+h2{
     text-align: center;
 }
 
