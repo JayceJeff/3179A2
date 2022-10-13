@@ -21,7 +21,7 @@ p{
 .vis-container{
     width: 100%;
     margin: 0 auto; 
-    background-color: white;
+    background-color: red;
     display: inline-block;
     align-items: center;
   }
