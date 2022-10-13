@@ -61,7 +61,92 @@
 
         var spec2 = "js/stackedbar_chart.vg.json";
       vegaEmbed('#stackedbar_chart', spec2).then(function(result) {
-        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        // Access the Vega <!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+  <!-- Open Sans font -->
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="page">
+    <div class ="pure-g" style = "position: relative; width:100%">
+      <div class = "pure-u-1-1">
+        <h1>
+          <span id = "title"> Gas Price Around the World </span>
+        </h1>
+          <p style="padding-left:5em; padding-right:5em; text-align: justify;"> In late December 2019, Covid-19 emerged from Wuhan, China,
+            and resulted in a formidable outbreak in many cities in China and expanded globally. One of the impact of Covid-19 is the 
+            <span style = "font-weight: bold; color: red">sharp drop in gas prices.</span>
+            After a few years, many of the countries have adapted to the pandemic and the gas prices are started to 
+            <span style = "font-weight: bold; color: darkblue">recover back to the normal states.</span>
+            We will be visualizing the gas prices around the world on 
+            <span style = "font-weight: bold; color: black">23rd June 2022.</span>
+          </p>"
+  </div>
+
+  <div class = "pure-g" style="position: relative; width:100%;">
+    <div class = "pure-u-1-1">
+      <div class = "description middle">
+        <div class = "inner">
+          <h1 style="color: White">How Was The Gas Price on 23rd June 2022?</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g" style="position: relative; width:100%;">
+    <div class = "pure-u-1-1" style="padding-bottom: 2em;">
+      <div style="margin: 0 auto;">
+        <div id ="chloropleth_map">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g" style="position: relative, width:100%;">
+    <div class="pure-u-1-1">
+      <div class="description middle">
+        <div class="inner">
+          <h1 style="color: white">How Many Barrels of Oil Needed for each Country Based on their GDP and Population?</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var spec1 = "js/map.vg.json";
+  vegaEmbed('#chloropleth_map', spec1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec2 = "js/bubble_chart.vg.json";
+  vegaEmbed('#bubble_chart', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec3 = "js/stacked_barchart.vg.json";
+  vegaEmbed('#stacked_barchart', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+    </script>
+  </body>
+</html>view instance (https://vega.github.io/vega/docs/api/view/) as result.view
       }).catch(console.error);
 
       var spec2 = "js/bubble_chart.vg.json";
