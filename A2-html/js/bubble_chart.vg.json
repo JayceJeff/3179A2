@@ -1,0 +1,94 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 500,
+    "data": { 
+        "url": "https://raw.githubusercontent.com/JayceJeff/3179A2/main/bubblechart-html/data/World_Petrol_Population.csv"
+    },
+    "title": "Oil Consumption Daily based on GDP of each Country",
+    "transform":[{"filter": "Continent_selection == null || datum.Continent == Continent_selection"}],
+    "params":[
+        {
+            "name": "Continent_selection",
+            "bind":{
+                "input": "select",
+                "options":[
+                    null,
+                    "North America",
+                    "South America",
+                    "Europe",
+                    "Africa",
+                    "Asia",
+                    "Oceania"
+                ],
+                "labels":[
+                    "Show All",
+                    "North America",
+                    "South America",
+                    "Europe",
+                    "Africa",
+                    "Asia",
+                    "Oceania"
+                ],
+                "name": "Continent Selection"
+            }
+        }
+    ],
+    "mark": "circle",
+    "encoding": {
+        "x": {
+            "field": "GDP Per Capita ( USD )",
+            "type": "quantitative",
+            "title": "GDP Per Capita ( USD )",
+            "axis": {"tickCount": 6},
+            "scale": {"type": "log", "domain": [1, 150000]}
+        },
+        "y": {
+            "field": "Daily Oil Consumption (Barrels)",
+            "type": "quantitative",
+            "axis": {"tickCount": 7},
+            "scale": {"type": "log", "domain": [1, 20000000]}
+    },
+    "color": {
+        "field": "Continent",
+        "type": "nominal",
+        "scale": {
+        "domain": [
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+        ],
+        "range": [
+            "#e41a1c",
+            "#984ea3",
+            "#ff7f00",
+            "#a6cee3",
+            "#377eb8",
+            "#a65628"
+            ]
+        }
+    },
+    "opacity": {"value": 0.6},
+    "size": {
+        "field": "2022 Population",
+        "type": "quantitative",
+        "title": "Population",
+        "scale": {
+        "type": "threshold",
+        "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
+        "range": [10, 50, 150, 200, 300, 400]
+        },
+        "legend": {"format": ".1s"}
+        },
+        "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {"field": "Daily Oil Consumption (Barrels)", "type": "quantitative", "format": ","},
+            {"field": "GDP Per Capita ( USD )", "type": "quantitative", "format": ","},
+            {"field": "2022 Population","type": "quantitative"}
+        ]
+    }
+}
+
