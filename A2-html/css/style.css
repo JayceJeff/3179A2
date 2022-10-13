@@ -11,6 +11,12 @@ p{
     text-align: center;
 }
 
+#title{
+    font-size:45px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-align:center;
+}
 .page{
     background-color: #00b2ca;
     margin: 0 auto;
