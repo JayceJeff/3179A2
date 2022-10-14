@@ -41,13 +41,13 @@
             "type": "quantitative",
             "title": "GDP Per Capita ( USD )",
             "axis": {"tickCount": 6},
-            "scale": {"type": "log", "domain": [1, 150000]}
+            "scale": {"type": "log", "domain": [100, 150000]}
         },
         "y": {
             "field": "Daily Oil Consumption (Barrels)",
             "type": "quantitative",
             "axis": {"tickCount": 7},
-            "scale": {"type": "log", "domain": [1, 20000000]}
+            "scale": {"type": "log", "domain": [10, 20000000]}
     },
     "color": {
         "field": "Continent",
