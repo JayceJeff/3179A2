@@ -3,6 +3,7 @@
     "title": { "text": "Yearly Gallons of Gas Per Capita in Different Countries" },
     "data": {"url": "https://raw.githubusercontent.com/JayceJeff/3179A2/main/bubblechart-html/data/World_Petrol_Population.csv"},
     "mark": "bar",
+    "background": "lightblue",
     "transform": [{"fold":["Yearly Gallons Per Capita", "xTimes Yearly Gallons Per Capita Buy"], "as": ["category", "value"]}],
     "params":[{
         "name": "continent_highlight",
@@ -30,16 +31,17 @@
         "field": "category",
         "type": "nominal",
         "scale":{"domain": ["Yearly Gallons Per Capita", "xTimes Yearly Gallons Per Capita Buy"],
-        "range": ["#e7ba52", "#aec7e8"]
+        "range": ["orange", "darkgray"]
         }
 
       }, 
       "tooltip": [
         {"field": "Continent", "type": "nominal"},
         {"field": "Country", "type": "nominal"},
-        {"field": "Yearly Gallons Per Capita", "type": "quantitative", "format": ","},
-        {"field": "xTimes Yearly Gallons Per Capita Buy", "type": "quantitative", "format": ","}
-      ],
+        {"field": "Yearly Gallons Per Capita", "type": "quantitative", "format": ",", "title": "Yearly Gallons of gas Per Capita"},
+        {"field": "xTimes Yearly Gallons Per Capita Buy", "type": "quantitative", "format": ",", "title": "Number of times yearly gallons of gas per capita can buy"}
+      ]
+      ,
       "opacity":{
         "condition": {"param": "continent_highlight", "value": 0.9 },
         "value": 0.2
