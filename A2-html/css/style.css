@@ -2,11 +2,7 @@
     font-family: 'Open Sans';
 }
 
-h1{
-    text-align: center;
-}
-
-h2{
+h1, h2 {
     text-align: center;
 }
 
@@ -17,7 +13,6 @@ p{
 #title{
     font-size:45px;
     font-weight: bold;
-    font-family: 'Roboto';
     text-align:center;
 }
 
@@ -39,7 +34,7 @@ p{
     }
 
 .page{
-    background-color: #00b2ca;
+    background-color: gray;
     margin: 0 auto;
 }
 
@@ -55,7 +50,7 @@ p{
 }
 
 .inner {
-    background-color: #3895d3; 
+    background-color: darkgray; 
     padding-left: 5em;
     padding-right:5em;
     padding-top: 0.4em;
