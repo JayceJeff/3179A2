@@ -24,7 +24,6 @@
         "field": "value",
         "aggregate": "average",
         "type": "quantitative",
-        "stack": "normalize",
         "title": "Gallons of Gas Each Country Needed In a Year"
       },
       "color": {
@@ -36,6 +35,7 @@
 
       }, 
       "tooltip": [
+        {"field": "Continent", "type": "nominal"},
         {"field": "Country", "type": "nominal"},
         {"field": "Yearly Gallons Per Capita", "type": "quantitative", "format": ","},
         {"field": "xTimes Yearly Gallons Per Capita Buy", "type": "quantitative", "format": ","}
@@ -46,12 +46,3 @@
         }
     }
 }
-    
-
-
-
-
-
-
-
-  
