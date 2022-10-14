@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": "Yearly Gallons Per Capita in Different Countries" },
+    "title": { "text": "Yearly Gallons of Gas Per Capita in Different Countries" },
     "data": {"url": "https://raw.githubusercontent.com/JayceJeff/3179A2/main/bubblechart-html/data/World_Petrol_Population.csv"},
     "mark": "bar",
     "transform": [{"fold":["Yearly Gallons Per Capita", "xTimes Yearly Gallons Per Capita Buy"], "as": ["category", "value"]}],
@@ -13,19 +13,19 @@
         "bind": "legend"
     }],
     "height": 500,
-    "width":900,
+    "width": 700,
     "encoding": {
       "x": {
-        "field": "Country",
+        "field": "Continent",
         "type": "nominal",
-        "title": "Country"
+        "title": "Continent"
       },
       "y": {
         "field": "value",
-        "aggregate": "sum",
+        "aggregate": "average",
         "type": "quantitative",
         "stack": "normalize",
-        "title": "Gallons of Gas Each Coountry Needed In a Year"
+        "title": "Gallons of Gas Each Country Needed In a Year"
       },
       "color": {
         "field": "category",
