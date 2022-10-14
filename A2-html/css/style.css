@@ -34,7 +34,7 @@ p{
     }
 
 .page{
-    background-color: lightgray;
+    background-color: lightblue;
     margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@ p{
 }
 
 .inner {
-    background-color: darkgray; 
+    background-color: #cad2d3b8; 
     padding-left: 5em;
     padding-right:5em;
     padding-top: 0.4em;
