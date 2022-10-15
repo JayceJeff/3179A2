@@ -74,6 +74,11 @@ p{
     text-align:center;
 }
 
+.desc-left {
+    padding-left: 5em;
+    text-align:center;
+}
+
 .middle{
     padding-left: 5em;
     padding-right: 5em;
