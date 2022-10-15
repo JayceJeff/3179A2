@@ -46,14 +46,17 @@ p{
 
 .main-divider{
     background-color: rgb(88, 25, 25);
-    width: 100%;
-    height: 100%;
+    padding-left: 5em;
+    padding-right:5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    margin-bottom: 2em;
 }
 
 .big_main_title{
     font-weight: 1000;
-    color: rgb(88, 25, 25);
-    font-size: 36px;
+    color: azure;
+    font-size: 40px;
   }
 
 .vis-container {
