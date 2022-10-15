@@ -105,14 +105,7 @@
   <div class="pure-g" style="position: relative; width:100%">
     <div class="pure-u-1-1">
       <div class="description middle">
-        <h4 style="font-weight: bold;">Use the continent selection on top to select and filter the continent in the graph.</h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="pure-g" style="position: relative; width:100%">
-    <div class="pure-u-1-1">
-      <div class="description middle">
+        <h3 style="font-weight: bold;">Use the continent selection on top to select and filter the continent in the graph.</h3>
         <h4 style="font-weight: bold;">The <span style ="font-weight: bold; color: darkblue">higher</span> the 
           <span style = "font-weight: bold; font-size: 25px; color: red">GDP</span> and the 
           <span style = "font-weight: bold; font-size: 25px; color: red">POPULATION</span>, 
@@ -146,27 +139,15 @@
       </div>
     </div>
   </div>
+
+  <div class="pure-g" style="position: relative; width:100%">
+    <div class="pure-u-1-1">
+      <div class="description middle">
+        <h3 style="font-weight: bold;">Use the country selection on top to select and filter the country in the graph.</h3>
+        <h3 style="font-weight: bold;">Click the color label of the category's legend to filter the category.</h3>
+      </div>
+    </div>
+  </div>
+  
   </div>
   </div>
-
-
-<script type="text/javascript">
-
-  var spec1 = "js/map.vg.json";
-  vegaEmbed('#chloropleth_map', spec1).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-  var spec2 = "js/bubble_chart.vg.json";
-  vegaEmbed('#bubble_chart', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-  var spec3 = "js/stacked_barchart.vg.json";
-  vegaEmbed('#stacked_barchart', spec3).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-    </script>
-  </body>
-</html>
