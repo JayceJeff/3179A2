@@ -46,13 +46,17 @@ p{
     margin: 0 auto;
 }
 
+.vis-container {
+    width:100%
+}
+
 .description h2, h1{
     margin-top: 0px;
     text-align:center;
 }
 
 .desc-right {
-    padding-right: 20px;
+    padding-left: 20px;
     text-align:center;
 }
 
