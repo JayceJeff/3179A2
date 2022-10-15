@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Gas Price Around the World (23 June 2022)",
-    "width": 1000,
-    "height": 700,
+    "width": 800,
+    "height": 600,
     "background":"lightblue",
     "data": {
         "url": "https://raw.githubusercontent.com/JayceJeff/3179A2/main/3179A2/js/output%20.json",
