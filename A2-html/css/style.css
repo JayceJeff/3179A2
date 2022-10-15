@@ -21,7 +21,7 @@ h4 {
 
 p{
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 #title{
@@ -71,11 +71,6 @@ p{
 
 .desc-right {
     padding-right: 5em;
-    text-align:center;
-}
-
-.desc-left {
-    padding-left: 5em;
     text-align:center;
 }
 
