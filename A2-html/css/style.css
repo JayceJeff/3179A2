@@ -8,7 +8,7 @@ h1, h2 {
 }
 
 h3 {
-    text-align: center;
+    text-align: left;
     font-size: 15px;
     padding-right: 20px;
 }
@@ -18,7 +18,6 @@ h4 {
     font-size: 20px;
     padding-right: 20px;
 }
-
 
 p{
     text-align: center;
@@ -45,9 +44,19 @@ p{
     margin: 0 auto;
 }
 
+.main-divider{
+    color:  azure;
+}
+
+.big_main_title{
+    font-weight: 1000;
+    color: rgb(88, 25, 25);
+    font-size: 36px;
+  }
+
 .vis-container {
     width:100%;
-    item-align: center;
+    align-items: center;
 }
 
 .description h2, h1{
@@ -56,7 +65,7 @@ p{
 }
 
 .desc-right {
-    padding-left: 20px;
+    padding-right: 5em;
     text-align:center;
 }
 
@@ -72,6 +81,9 @@ p{
     padding-left: 5em;
     padding-right:5em;
     padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    margin-bottom: 2em;
+  }
     padding-bottom: 0.4em;
     margin-bottom: 2em;
   }
