@@ -45,7 +45,9 @@ p{
 }
 
 .main-divider{
-    color:  azure;
+    background-color: rgb(88, 25, 25);
+    width: 100%;
+    height: 100%;
 }
 
 .big_main_title{
@@ -81,9 +83,6 @@ p{
     padding-left: 5em;
     padding-right:5em;
     padding-top: 0.4em;
-    padding-bottom: 0.4em;
-    margin-bottom: 2em;
-  }
     padding-bottom: 0.4em;
     margin-bottom: 2em;
   }
